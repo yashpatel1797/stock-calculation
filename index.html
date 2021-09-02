@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stock Practice</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <h1>Stock Practice</h1>
-    <main>
-        <label for="initial-price">Intial price <input id="initial-price" type="text" placeholder="Enter the Initial price"></label>
+    <main class="container">
+        <label for="initial-price">Intial price <input id="initial-price" type="text" placeholder="Enter the Initial price" required></label>
         
-        <label for="stock-quantity">Quantity of stock<input id="stock-quantity"type="text" placeholder="Enter the number of stock"></label>
+        <label for="stock-quantity">Quantity of stock<input id="stock-quantity"type="text" placeholder="Enter the number of stock" required></label>
         
-        <label for="current-price">Current Price<input id="current-price"type="text" placeholder="Enter the Current price"></label>
+        <label for="current-price">Current Price<input id="current-price"type="text" placeholder="Enter the Current price" required></label>
         
         <button id="btn-submit">Tell me!</button>
         <div id="output"></div>
+        
     </main>
     <script src="apps.js"></script>
 </body>

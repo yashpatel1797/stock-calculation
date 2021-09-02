@@ -20,7 +20,7 @@ function calculateProfitAndLoss(initial, quantity, current){
         var profitPercentage = (profit/initial) * 100;
         showMessage(`Profit is ${profit} and the percent is ${profitPercentage}`, "Green");
     } else {
-        showMessage(`No Profit or Loss`, "black");
+        showMessage(`Neither profit nor loss!`, "black");
     }
 }
 
