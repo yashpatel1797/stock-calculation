@@ -10,15 +10,16 @@
 <body>
     <h1>Stock Practice</h1>
     <main class="container">
-        <label for="initial-price">Intial price <input id="initial-price" type="text" placeholder="Enter the Initial price" required></label>
+        <form>
+        <label for="initial-price">Intial price <input id="initial-price" type="number" min=1 placeholder="Enter the Initial price" required></label>
         
-        <label for="stock-quantity">Quantity of stock<input id="stock-quantity"type="text" placeholder="Enter the number of stock" required></label>
+        <label for="stock-quantity">Quantity of stock<input id="stock-quantity"type="number" min=1 placeholder="Enter the number of stock" required></label>
         
-        <label for="current-price">Current Price<input id="current-price"type="text" placeholder="Enter the Current price" required></label>
+        <label for="current-price">Current Price<input id="current-price"type="number" min=1 placeholder="Enter the Current price" required></label>
         
         <button id="btn-submit">Tell me!</button>
-        <div id="output"></div>
-        
+        <div id="output"></div>    
+    </form>
     </main>
     <script src="apps.js"></script>
 </body>

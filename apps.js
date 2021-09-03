@@ -7,7 +7,12 @@ var output = document.querySelector("#output");
 
 
 function submitHandler(){
-    calculateProfitAndLoss(Number(initialPrice.value), Number(stockQuantity.value), Number(currentPrice.value));
+    if(Number(initialPrice.value) > 0 && Number(stockQuantity.value) > 0 && Number(currentPrice.value)){
+        calculateProfitAndLoss(Number(initialPrice.value), Number(stockQuantity.value), Number(currentPrice.value));
+    } else {
+        showMessage(`Add positive values`, "orange");
+    }
+    
 }
 
 function calculateProfitAndLoss(initial, quantity, current){
@@ -23,7 +28,6 @@ function calculateProfitAndLoss(initial, quantity, current){
         showMessage(`Neither profit nor loss!`, "black");
     }
 }
-
 function showMessage(message, color){
     output.innerText = message;
     output.style.color = color;
