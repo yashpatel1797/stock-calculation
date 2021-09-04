@@ -7,7 +7,7 @@ var output = document.querySelector("#output");
 
 
 function submitHandler(){
-    if(Number(initialPrice.value) > 0 && Number(stockQuantity.value) > 0 && Number(currentPrice.value)){
+    if(Number(initialPrice.value) > 0 && Number(stockQuantity.value) > 0 && Number(currentPrice.value) > 0){
         calculateProfitAndLoss(Number(initialPrice.value), Number(stockQuantity.value), Number(currentPrice.value));
     } else {
         showMessage(`Add positive values`, "orange");
