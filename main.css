@@ -1,5 +1,6 @@
 body{
     font-size: larger;
+    
 }
 h1{
     text-align: center;
@@ -10,7 +11,7 @@ h1{
 }
 input, label, p{
     display: block;
-    padding-bottom: 0.5rem;
+    padding: 2rem 1rem;
     text-align: center;
 }
 input{
@@ -33,3 +34,8 @@ input{
     font-size: larger;
     margin: 1rem;
 }
+@media only screen and (max-width: 991px){
+    input{
+        width:100%;
+    }
+    }
